@@ -15,6 +15,12 @@
 		5CF6A1381FD3F903004814A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6A1371FD3F903004814A5 /* Assets.xcassets */; };
 		5CF6A13B1FD3F903004814A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6A1391FD3F903004814A5 /* LaunchScreen.storyboard */; };
 		5CF6A1471FD3FB62004814A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6A1461FD3FB62004814A5 /* GoogleService-Info.plist */; };
+		5CF6A14A1FD40035004814A5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1491FD40035004814A5 /* DataService.swift */; };
+		5CF6A14C1FD44286004814A5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A14B1FD44286004814A5 /* AuthVC.swift */; };
+		5CF6A14E1FD44306004814A5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A14D1FD44306004814A5 /* LoginVC.swift */; };
+		5CF6A1501FD44363004814A5 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A14F1FD44363004814A5 /* InsetTextField.swift */; };
+		5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1511FD448DA004814A5 /* ShadowView.swift */; };
+		5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1531FD44D48004814A5 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		5CF6A13A1FD3F903004814A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CF6A13C1FD3F903004814A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CF6A1461FD3FB62004814A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CF6A1491FD40035004814A5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5CF6A14B1FD44286004814A5 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		5CF6A14D1FD44306004814A5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5CF6A14F1FD44363004814A5 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		5CF6A1511FD448DA004814A5 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		5CF6A1531FD44D48004814A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A613462FAA816A860CF6734F /* Pods-BreakPointApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPointApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPointApp/Pods-BreakPointApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F976535EE639F05981352251 /* Pods-BreakPointApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPointApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPointApp/Pods-BreakPointApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +77,7 @@
 		5CF6A12D1FD3F903004814A5 /* BreakPointApp */ = {
 			isa = PBXGroup;
 			children = (
+				5CF6A1481FD3FFE7004814A5 /* Services */,
 				5CF6A1451FD3F9C3004814A5 /* Extensions */,
 				5CF6A1441FD3F9BF004814A5 /* View */,
 				5CF6A1431FD3F9B6004814A5 /* Controllers */,
@@ -91,6 +104,8 @@
 			children = (
 				5CF6A1301FD3F903004814A5 /* FirstViewController.swift */,
 				5CF6A1321FD3F903004814A5 /* SecondViewController.swift */,
+				5CF6A14B1FD44286004814A5 /* AuthVC.swift */,
+				5CF6A14D1FD44306004814A5 /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +113,8 @@
 		5CF6A1441FD3F9BF004814A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5CF6A14F1FD44363004814A5 /* InsetTextField.swift */,
+				5CF6A1511FD448DA004814A5 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +124,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5CF6A1481FD3FFE7004814A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5CF6A1491FD40035004814A5 /* DataService.swift */,
+				5CF6A1531FD44D48004814A5 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C2CF27FC2ED0A2FDC2496D4F /* Frameworks */ = {
@@ -262,9 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF6A14C1FD44286004814A5 /* AuthVC.swift in Sources */,
 				5CF6A1331FD3F903004814A5 /* SecondViewController.swift in Sources */,
+				5CF6A14E1FD44306004814A5 /* LoginVC.swift in Sources */,
+				5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */,
 				5CF6A12F1FD3F903004814A5 /* AppDelegate.swift in Sources */,
+				5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */,
 				5CF6A1311FD3F903004814A5 /* FirstViewController.swift in Sources */,
+				5CF6A1501FD44363004814A5 /* InsetTextField.swift in Sources */,
+				5CF6A14A1FD40035004814A5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
