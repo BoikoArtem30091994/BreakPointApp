@@ -15,6 +15,10 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+    override func awakeFromNib() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
