@@ -23,6 +23,7 @@
 		5CF6A1501FD44363004814A5 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A14F1FD44363004814A5 /* InsetTextField.swift */; };
 		5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1511FD448DA004814A5 /* ShadowView.swift */; };
 		5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1531FD44D48004814A5 /* AuthService.swift */; };
+		A68EC9E92017831200D49DCD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EC9E82017831200D49DCD /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		5CF6A1511FD448DA004814A5 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		5CF6A1531FD44D48004814A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A613462FAA816A860CF6734F /* Pods-BreakPointApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPointApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPointApp/Pods-BreakPointApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A68EC9E82017831200D49DCD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = BreakPointApp/View/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
 		F976535EE639F05981352251 /* Pods-BreakPointApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPointApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPointApp/Pods-BreakPointApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 		5CF6A1451FD3F9C3004814A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A68EC9E82017831200D49DCD /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				5CF6A14E1FD44306004814A5 /* LoginVC.swift in Sources */,
 				5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */,
 				5CF6A12F1FD3F903004814A5 /* AppDelegate.swift in Sources */,
+				A68EC9E92017831200D49DCD /* UIViewExtension.swift in Sources */,
 				5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */,
 				5C09D56A1FDAA5CF00A55730 /* CreatePostVC.swift in Sources */,
 				5CF6A1311FD3F903004814A5 /* FeedVC.swift in Sources */,
