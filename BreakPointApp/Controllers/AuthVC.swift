@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
 
@@ -14,10 +15,14 @@ class AuthVC: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
         
     }
+    
     @IBAction func signWithEmailBtnWasPressed(_ sender: Any) {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
         present(loginVC!, animated: true, completion: nil)
