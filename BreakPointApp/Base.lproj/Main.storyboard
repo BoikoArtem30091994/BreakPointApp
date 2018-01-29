@@ -297,14 +297,53 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="mSr-7H-P2S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="100" id="mSr-7H-P2S" customClass="GroupCell" customModule="BreakPointApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mSr-7H-P2S" id="KWL-HC-QSO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExF-HP-cVD">
+                                                    <rect key="frame" x="15" y="11" width="345" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                                    <color key="textColor" red="0.18551379442214966" green="0.27781307697296143" blue="0.47725373506546021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-1w-zae">
+                                                    <rect key="frame" x="15" y="35.5" width="345" height="53.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQJ-29-Fyu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="34.5"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="TQ7-dW-C4Q">
+                                                            <rect key="frame" x="0.0" y="39.5" width="345" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ExF-HP-cVD" firstAttribute="top" secondItem="KWL-HC-QSO" secondAttribute="topMargin" id="7Wf-5w-Nbe"/>
+                                                <constraint firstItem="ExF-HP-cVD" firstAttribute="trailing" secondItem="KWL-HC-QSO" secondAttribute="trailingMargin" id="G9q-LY-Wtb"/>
+                                                <constraint firstItem="Nnf-1w-zae" firstAttribute="leading" secondItem="KWL-HC-QSO" secondAttribute="leadingMargin" id="I1K-zB-rK7"/>
+                                                <constraint firstItem="ExF-HP-cVD" firstAttribute="leading" secondItem="KWL-HC-QSO" secondAttribute="leadingMargin" id="Jss-GJ-08L"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Nnf-1w-zae" secondAttribute="trailing" id="Sky-lN-4lW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Nnf-1w-zae" secondAttribute="bottom" id="fnR-oF-JDJ"/>
+                                                <constraint firstItem="Nnf-1w-zae" firstAttribute="top" secondItem="ExF-HP-cVD" secondAttribute="bottom" constant="5" id="nCB-CC-wLa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="gorupTitleLabel" destination="ExF-HP-cVD" id="HEh-i3-Xdj"/>
+                                            <outlet property="groupDescriptionLabel" destination="zQJ-29-Fyu" id="XSP-WJ-evf"/>
+                                            <outlet property="memberCountLabel" destination="TQ7-dW-C4Q" id="yhd-ov-3iw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -322,10 +361,13 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" image="groups-tabIcon" selectedImage="groups-tabIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="groupsTableView" destination="U08-SZ-kgV" id="Rst-tI-JNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="456"/>
+            <point key="canvasLocation" x="756" y="455.62218890554726"/>
         </scene>
         <!--Create GroupVC-->
         <scene sceneID="uBQ-sz-xgY">

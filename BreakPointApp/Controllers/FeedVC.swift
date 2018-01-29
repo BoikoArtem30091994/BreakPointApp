@@ -9,7 +9,7 @@
 import UIKit
 
 class FeedVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var messageArray = [Message]()
@@ -19,15 +19,14 @@ class FeedVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DataService.instance.getAllFeedMessages { (returnedMessagesArray) in
             self.messageArray = returnedMessagesArray.reversed()
             self.tableView.reloadData()
         }
-}
-
+    }
 }
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
