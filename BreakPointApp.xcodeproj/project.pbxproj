@@ -23,6 +23,8 @@
 		5CF6A1501FD44363004814A5 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A14F1FD44363004814A5 /* InsetTextField.swift */; };
 		5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1511FD448DA004814A5 /* ShadowView.swift */; };
 		5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A1531FD44D48004814A5 /* AuthService.swift */; };
+		A6036D8C202350CB00AE9C6B /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6036D8B202350CB00AE9C6B /* GroupFeedVC.swift */; };
+		A6036D8E202350E800AE9C6B /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6036D8D202350E800AE9C6B /* GroupFeedCell.swift */; };
 		A608259A2017A80B00BDC17E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60825992017A80B00BDC17E /* FeedCell.swift */; };
 		A676FD0C201B77B200B37EEF /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676FD0B201B77B200B37EEF /* CreateGroupVC.swift */; };
 		A676FD0E201B844700B37EEF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A676FD0D201B844700B37EEF /* UserCell.swift */; };
@@ -51,6 +53,8 @@
 		5CF6A14F1FD44363004814A5 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		5CF6A1511FD448DA004814A5 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		5CF6A1531FD44D48004814A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A6036D8B202350CB00AE9C6B /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
+		A6036D8D202350E800AE9C6B /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		A60825992017A80B00BDC17E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A613462FAA816A860CF6734F /* Pods-BreakPointApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPointApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPointApp/Pods-BreakPointApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A676FD0B201B77B200B37EEF /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				5C09D5671FDA9D7A00A55730 /* ProfileVC.swift */,
 				5C09D5691FDAA5CF00A55730 /* CreatePostVC.swift */,
 				A676FD0B201B77B200B37EEF /* CreateGroupVC.swift */,
+				A6036D8B202350CB00AE9C6B /* GroupFeedVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				A60825992017A80B00BDC17E /* FeedCell.swift */,
 				A676FD0D201B844700B37EEF /* UserCell.swift */,
 				A680FDB2201F866600520E00 /* GroupCell.swift */,
+				A6036D8D202350E800AE9C6B /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,12 +329,14 @@
 				5CF6A1541FD44D48004814A5 /* AuthService.swift in Sources */,
 				5CF6A12F1FD3F903004814A5 /* AppDelegate.swift in Sources */,
 				A68EC9E92017831200D49DCD /* UIViewExtension.swift in Sources */,
+				A6036D8C202350CB00AE9C6B /* GroupFeedVC.swift in Sources */,
 				5CF6A1521FD448DA004814A5 /* ShadowView.swift in Sources */,
 				A680FDB5201F91E900520E00 /* Group.swift in Sources */,
 				A676FD0E201B844700B37EEF /* UserCell.swift in Sources */,
 				A676FD0C201B77B200B37EEF /* CreateGroupVC.swift in Sources */,
 				5C09D56A1FDAA5CF00A55730 /* CreatePostVC.swift in Sources */,
 				A608259A2017A80B00BDC17E /* FeedCell.swift in Sources */,
+				A6036D8E202350E800AE9C6B /* GroupFeedCell.swift in Sources */,
 				A68EC9EB20178FA600D49DCD /* Message.swift in Sources */,
 				5CF6A1311FD3F903004814A5 /* FeedVC.swift in Sources */,
 				5CF6A1501FD44363004814A5 /* InsetTextField.swift in Sources */,
